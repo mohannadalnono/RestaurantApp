@@ -3,7 +3,8 @@
 
 This simple app display meals and make user apple to filter and cutomize displayed meals!
 I have developed this app just for educational proposes, upgrades with more features will be added in the future (app will still just for educational proposes).
-    
+
+after cloning repo don't forget to Get and Upgrade Packages!
     
     
     some Screenshots:
