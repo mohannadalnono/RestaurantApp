@@ -1,3 +1,4 @@
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/material.dart';
 import 'package:meal_app/main.dart';
 import 'package:meal_app/models/meal.dart';
@@ -117,6 +118,15 @@ class _FilterScreenState extends State<FilterScreen> {
                     };
                     //TODO :: ADD TOAST NOTIFICATION
                     widget.saveFilters(selctedFilter);
+                    
+                    Fluttertoast.showToast(
+                      msg: 'Filter applied!',
+                      fontSize: 20,
+                      textColor: Color.fromRGBO(135, 29, 32, 1),
+                      backgroundColor: Color.fromRGBO(241, 211, 2, 0.5),
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.CENTER,
+                    );
                   },
                   child: Container(
                     height: 40,
