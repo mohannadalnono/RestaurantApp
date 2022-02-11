@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/screens/about_screen.dart';
 import 'package:meal_app/screens/filter_screen.dart';
 import './categories_screen.dart';
 
@@ -45,6 +46,13 @@ class DrawerScreen extends StatelessWidget {
             Icons.search,
             () {
               Navigator.of(context).pushNamed(FilterScreen.route);
+            },
+          ),
+          BuildListTile(
+            "About",
+            Icons.search,
+            () {
+              Navigator.of(context).pushNamed(AboutMe.route);
             },
           ),
         ],

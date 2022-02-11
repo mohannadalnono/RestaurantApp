@@ -9,6 +9,7 @@ import 'package:meal_app/screens/tabs_screen.dart';
 import './screens/categories_screen.dart';
 import './screens/meal_screen.dart';
 import 'models/meal.dart';
+import 'screens/about_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -104,6 +105,7 @@ class _MyAppState extends State<MyApp> {
         MealScreen.route: (context) => MealScreen(_availableMeals),
         MealDetails.route: (context) =>
             MealDetails(_toggleFavorite, _isMealFavorite),
+        AboutMe.route: (context) => AboutMe(),
       },
     );
   }
